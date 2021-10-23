@@ -1,0 +1,77 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {
+    "align": [
+      true
+    ],
+    "no-unused-expression": true
+  },
+  "rules": {
+    "align": [
+      true
+    ],
+    "interface-name": [
+      true,
+      "always-prefix"
+    ],
+    "max-line-length": [
+      true,
+      {
+        "limit": 70,
+        "ignore-pattern": "^import "
+      }
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-constructor",
+          "public-instance-method",
+          "public-instance-field",
+          "public-static-method",
+          "public-static-field",
+          "protected-constructor",
+          "protected-instance-method",
+          "protected-instance-field",
+          "protected-static-method",
+          "protected-static-field",
+          "private-constructor",
+          "private-instance-method",
+          "private-instance-field",
+          "private-static-method",
+          "private-static-field"
+        ]
+      }
+    ],
+    "no-var-requires": false,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "lowercase-first",
+        "named-imports-order": "lowercase-first",
+        "module-source-path": "full"
+      }
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "avoid-escape",
+      "avoid-template"
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ]
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": [
+      "./misc/**/*"
+    ]
+  }
+}
