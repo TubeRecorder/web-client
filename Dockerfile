@@ -1,11 +1,11 @@
-FROM my-build/ts-builder:latest as builder
+FROM tube-recorder/ts-builder:latest as builder
 
 COPY . .
 
 RUN \
   npm install && npm run build
 
-FROM my-build/ts-release:latest
+FROM tube-recorder/ts-release:latest
 
 COPY \
   --from=builder \
